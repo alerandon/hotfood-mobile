@@ -1,0 +1,139 @@
+title: Home
+sections:
+  hero:
+    display: Hero
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          localizable: true
+      -
+        handle: hero_image
+        field:
+          type: assets
+          container: assets
+          folder: img/hero
+          restrict: true
+          max_files: 1
+          mode: list
+          display: 'Background image'
+          localizable: true
+      -
+        handle: hero_title
+        field:
+          type: text
+          width: 50
+          display: 'Hero title'
+          default: 'Great delighful food comes to you, now!'
+          localizable: true
+      -
+        handle: hero_button_label
+        field:
+          type: text
+          display: 'Hero button label'
+          default: 'Come here!'
+          width: 50
+          localizable: true
+  features:
+    display: Features
+    fields:
+      -
+        handle: features
+        field:
+          type: grid
+          mode: stacked
+          max_rows: 3
+          min_rows: 3
+          fields:
+            -
+              handle: feature_icon
+              field:
+                type: assets
+                container: assets
+                folder: icons/features
+                restrict: true
+                max_files: 1
+                mode: list
+                width: 50
+                display: Icon
+                localizable: true
+            -
+              handle: feature_title
+              field:
+                type: text
+                width: 50
+                display: 'Feature title'
+                localizable: true
+            -
+              handle: feature_description
+              field:
+                type: textarea
+                display: 'Feature description'
+                localizable: true
+          localizable: true
+          display: Features
+  menu:
+    display: Menu
+    fields:
+    -
+      handle: menu_title
+      field:
+        type: text
+        width: 50
+        display: 'Menu title'
+        default: 'Our Presentations'
+        localizable: true
+    -
+        handle: menu_button_label
+        field:
+          type: text
+          display: 'Menu button label'
+          default: 'See more'
+          width: 50
+          localizable: true
+  about:
+    display: About
+    fields:
+    -
+      handle: about_image
+      field:
+        type: assets
+        container: assets
+        folder: img/about
+        restrict: true
+        max_files: 1
+        mode: list
+        display: 'About image'
+        localizable: true
+    -
+      handle: about_label
+      field:
+        type: text
+        width: 50
+        display: 'About title'
+        default: 'ABOUT'
+        localizable: true
+    -
+      handle: about_title
+      field:
+        type: text
+        width: 50
+        display: 'About title'
+        default: 'Foodies and fried dreams'
+        localizable: true
+    -
+      handle: about_description
+      field:
+        type: textarea
+        display: 'Feature description'
+        localizable: true
+    -
+      handle: about_button_label
+      field:
+        type: text
+        width: 50
+        display: 'About button label'
+        default: 'Read more'
+        localizable: true
